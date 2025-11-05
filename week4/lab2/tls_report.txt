@@ -14,10 +14,10 @@ Certificate chain: tnet.ge -> GTS Root R4 -> GlobalSign Root CA
 TLS HANDSHAKE EXPLANATION
 
 ClientHello sent (client proposes TLS 1.2, list of cipher suites, SNI tnet.ge).
-ServerHello responded selecting TLS 1.2 with cipher TLS_CHACHA20_POLY1305_SHA256 
+ServerHello responded selecting TLS 1.2 with cipher AEAD_CHACHA20_POLY1305_SHA256 
 Server sent "Change Cipher Spec"
 Client also sent "Change Cipher Spec"
-Server sent Certificate message (leaf certificate + intermediate CA).
+Server sent Certificate message tnet.ge -> GTS Root R4.
 Server sent ServerFinished.
 
 
