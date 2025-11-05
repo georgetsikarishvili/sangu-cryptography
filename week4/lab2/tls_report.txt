@@ -1,0 +1,38 @@
+OBSERVED DATA
+
+Website: tnet.ge (IP: 104.26.8.83)
+TLS version: TLS 1.2
+Cipher suite: AEAD_CHACHA20_POLY1305_SHA256
+Key exchange: ECDHE (X25519)
+Certificate Subject: CN=tnet.ge
+Issuer: Google Trust Services
+Validity: Not Before: 2025-09-27, Not After: 2025-12-26
+Certificate chain: tnet.ge -> GTS Root R4 -> GlobalSign Root CA
+
+=========
+
+TLS HANDSHAKE EXPLANATION
+
+ClientHello sent (client proposes TLS 1.2, list of cipher suites, SNI tnet.ge).
+ServerHello responded selecting TLS 1.2 with cipher TLS_CHACHA20_POLY1305_SHA256 
+Server sent "Change Cipher Spec"
+Client also sent "Change Cipher Spec"
+Server sent Certificate message (leaf certificate + intermediate CA).
+Server sent ServerFinished.
+
+
+MITM PROTECTION MECHANISMS
+
+Certificate validation: client verifies server cert chain up to a trusted root CA and checks signature on each cert.
+Digital signatures: CA signs certificates with private key; clients verify using CA public key.
+SNI + hostname check: client checks cert SANs/Subject matches requested hostname.
+Forward Secrecy (ECDHE): ephemeral key exchange means long-term private key compromise does not reveal past session data.
+
+TLS APPLICATION IN WEBSITES
+
+Confidentiality: symmetric encryption (AES-GCM) protects payload from eavesdroppers.
+Integrity: AEAD modes provide tamper detection for each record.
+Authentication: server identity verified via certificate chain anchored to CA trust store.
+Session resumption and 0-RTT (TLS 1.2) trade-offs and considerations.
+
+
