@@ -1,0 +1,16 @@
+RSA vs AES Performance and Usage
+
+RSA:
+- Asymmetric (uses public & private key)
+- Slow and computationally expensive
+- Used mainly for exchanging keys or signing data
+- Not suitable for encrypting large files
+
+AES:
+- Symmetric (same key for encryption & decryption)
+- Very fast and efficient
+- Used for bulk data encryption (files, databases, VPNs)
+
+Conclusion:
+In real systems, RSA is typically used to encrypt an AES key, 
+and AES is used to encrypt the actual data.
