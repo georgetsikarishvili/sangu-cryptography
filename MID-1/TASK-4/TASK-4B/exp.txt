@@ -1,0 +1,3 @@
+Diffie-Hellman key exchange is widely used in secure communication protocols such as TLS (HTTPS) and secure messaging apps like Signal.
+In TLS, it allows the client and server to securely agree on a shared encryption key even over an untrusted network — without ever transmitting the key itself.
+This ensures confidentiality (only both parties can decrypt messages) and provides forward secrecy, meaning even if one session key is compromised, past communications remain secure.

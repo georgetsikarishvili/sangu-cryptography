@@ -1,0 +1,2 @@
+The HMAC changed completely after a single letter modification — proving that HMAC detects even the smallest alteration in data.
+HMAC ensures data integrity and authenticity using both the file content and the secret key.
